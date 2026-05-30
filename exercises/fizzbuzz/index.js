@@ -13,9 +13,7 @@
 //   buzz
 
 function fizzBuzz(n) {
-    const array = new Array(n);
-
-    for (let index = 1; index < array.length + 1; index++) {
+    for (let index = 1; index < n + 1; index++) {
         const three = index % 3 === 0
         const five = index % 5 == 0
 
