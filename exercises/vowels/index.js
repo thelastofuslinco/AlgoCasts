@@ -8,14 +8,8 @@
 //   vowels('Why?') --> 0
 
 function vowels(str) {
-    const hash = new Map([['a'], ['e'], ['i'], ['o'], ['u']])
-
-    let count = 0
-    for (const element of str.toLowerCase()) {
-        if(hash.has(element)) count ++
-    }
-
-    return count
+    const matches = str.match(/[aeiou]/gi)
+    return matches ? matches.length : 0
 }
 
 module.exports = vowels;
